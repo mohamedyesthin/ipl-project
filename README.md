@@ -1,2 +1,0 @@
-# ipl-project
-ipl project
