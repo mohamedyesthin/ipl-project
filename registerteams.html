@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>registered teams</title>
+    <style>
+        th {
+  border: 5px solid red;
+}
+
+td {
+  border: 4px dotted blue;
+}
+#grad1 {
+  height: 200px;
+  background-color: #cccccc;
+  background-image: radial-gradient(red, yellow, green);
+}
+
+
+    </style>
+</head>
+<body>
+
+<a href="/"><font color="blue"> go to index page</font></a>
+<div id="grad1"></div>
+<!--<h1>{{regteam}}</h1>-->
+<h1><font color="purple"><center> IPL - INDIAN PREMIER LEAGUE</center></font></h1>
+
+<table>
+
+    <tr>
+        <th><font color="red">Team name</font></th>
+        <th><font color="red"> Captain name</font></th>
+        <th><font color="red">Coach name</font></th>
+        <th><font color="red"> Player1 name</font></th>
+        <th><font color="red"> Player2 name</font></th>
+        <th><font color="red">Player3 name</font></th>
+        <th><font color="red"> Player4 name</font></th>
+        <th><font color="red">Player5 name</font></th>
+        <th><font color="red"> Player6 name</font></th>
+        <th><font color="red"> Player7 name</font></th>
+        <th><font color="red"> Player8 name</font></th>
+        <th><font color="red"> Player9 name</font></th>
+        <th><font color="red"> Player10 name</font></th>
+    </tr>
+    {%for item in regteam%}
+    <tr>
+        <td><font color="black"> {{item.team}}</font></td>
+        <td><font color="black">{{item.captain}}</font></td>
+        <td><font color="black">{{item.coach}}</font></td>
+        <td><font color="black">{{item.p1}}</font></td>
+        <td><font color="black">{{item.p2}}</font></td>
+        <td><font color="black">{{item.p3}}</font></td>
+        <td><font color="black">{{item.p4}}</font></td>
+        <td><font color="black">{{item.p5}}</font></td>
+        <td><font color="black">{{item.p6}}</font></td>
+        <td><font color="black">{{item.p7}}</font></td>
+        <td><font color="black">{{item.p8}}</font></td>
+        <td><font color="black">{{item.p9}}</font></td>
+        <td><font color="black">{{item.p10}}</font></td>
+    </tr>
+    {%endfor%}
+</table>
+<!--<h1>registered team is{{regteam}}</h1>-->
+</body>
+</html>
+
